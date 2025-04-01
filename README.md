@@ -1,4 +1,3 @@
-# InkWorks
 # InkWorks - Modern Digital Canvas
 
 A modern, feature-rich digital drawing application built with vanilla JavaScript and HTML5 Canvas. InkWorks provides a smooth, intuitive drawing experience with a beautiful glass-morphism UI design.
@@ -92,4 +91,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Material Icons](https://fonts.google.com/icons)
 - [Inter Font](https://fonts.google.com/specimen/Inter)
-- HTML5 Canvas API
+- HTML5 Canvas API 

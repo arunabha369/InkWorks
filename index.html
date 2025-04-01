@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="style.css">
+    <title>InkWorks - Modern Digital Canvas</title>
+</head>
+<body>
+    <nav class="glass-navbar">
+        <h1 class="logo">Ink<span>Works</span></h1>
+        <div class="nav-controls">
+            <button class="tool-btn save-btn" title="Save Drawing">
+                <span class="material-symbols-outlined">save</span>
+            </button>
+            <button class="tool-btn undo-btn" title="Undo">
+                <span class="material-symbols-outlined">undo</span>
+            </button>
+            <button class="tool-btn redo-btn" title="Redo">
+                <span class="material-symbols-outlined">redo</span>
+            </button>
+        </div>
+    </nav>
+    
+    <main class="canvas-container">
+        <canvas id="myCanvas"></canvas>
+    </main>
+
+    <div class="tools-panel glass-panel">
+        <div class="color-pickers">
+            <input type="color" class="color-btn" value="#ff3b30">
+            <input type="color" class="color-btn" value="#34c759">
+            <input type="color" class="color-btn" value="#007aff">
+            <input type="color" class="color-btn" value="#ffcc00">
+            <input type="color" class="color-btn" value="#000000">
+            <input type="color" class="color-btn" value="#ffffff">
+        </div>
+
+        <div class="tool-controls">
+            <div class="slider-group">
+                <label>Brush Size</label>
+                <input type="range" id="penWidth" min="1" max="50" value="5">
+            </div>
+
+            <div class="tool-buttons">
+                <button class="tool-btn pen active" title="Pen">
+                    <span class="material-symbols-outlined">draw</span>
+                </button>
+                <button class="tool-btn eraser" title="Eraser">
+                    <span class="material-symbols-outlined">ink_eraser</span>
+                </button>
+                <button class="tool-btn circle" title="Circle">
+                    <span class="material-symbols-outlined">radio_button_checked</span>
+                </button>
+                <button class="tool-btn rectangle" title="Rectangle">
+                    <span class="material-symbols-outlined">rectangle</span>
+                </button>
+                <button class="tool-btn line" title="Line">
+                    <span class="material-symbols-outlined">show_chart</span>
+                </button>
+                <button class="tool-btn clear" title="Clear Canvas">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
